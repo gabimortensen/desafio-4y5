@@ -1,0 +1,20 @@
+*
+h1{
+    text-align: center;
+    background-color: #D3E4CD;
+    padding: 2%;
+}
+
+h2{
+    text-align: center;
+    background-color: #D3E4CD;
+    padding: 2%;
+}
+
+#libros{
+    background-color: #99A799 ;
+    color: #D3E4CD;
+    font-size: large;
+    padding: 6%;
+    margin: 7px;
+}
