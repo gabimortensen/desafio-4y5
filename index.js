@@ -25,13 +25,13 @@ console.log(productosLibros);
 
 //= calcular cuotas
 let cuotasProducto = parseInt(prompt("Por favor, selecciona en cuántas cuotas quiere hacer el pago de su libro: 1 - 3 - 6"));
+let seleccionCuotas = alert ("Has decidido hacer el pago en " + cuotasProducto + " cuotas")
 
 for (const Libros of productosLibros) {
     Libros.calcularCuotas(cuotasProducto);
 
 }
 
-console.log(cuotasProducto);
 
 
 //= Interactuando con HTML:
@@ -46,6 +46,24 @@ for(const Libros of nuevosLibros){
     libros.append(li);
 }
 
+//= Incorporar eventos: 
+
+let container = document.getElementById('container');
+let resultado =  document.getElementById('resultado'); 
+
+container.addEventListener('submit', validarBusqueda); 
+
+function validarBusqueda(e){ 
+    e.preventDefault(); 
+    let buscadorLibro = document.getElementById('buscadorLibro').value;
+    
+    if(buscadorLibro.length < 4){  
+        resultado.innerText = alert('El nombre de libro ingresado no es válido');
+    }else{  
+        resultado.innerText = alert('¡El nombre ingresado es válido!' + " El libro que deseas ver es: " + buscadorLibro);
+        
+    }
+}
 
 
 

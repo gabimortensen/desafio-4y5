@@ -2,13 +2,13 @@
 h1{
     text-align: center;
     background-color: #D3E4CD;
-    padding: 2%;
+    padding: 1%;
 }
 
 h2{
     text-align: center;
     background-color: #D3E4CD;
-    padding: 2%;
+    padding: 1%;
 }
 
 #libros{
@@ -17,4 +17,24 @@ h2{
     font-size: large;
     padding: 6%;
     margin: 7px;
+}
+
+#container{
+    text-align: center;
+    padding: 3%;
+    background-color: #E5E3C9;
+   
+}
+
+.buscador, #buscadorLibro{
+    font-size: large;
+    padding: 1%;
+    justify-content: center;
+}
+
+
+#button{
+    font-size: medium;
+    padding: 1%;
+    justify-content: center;
 }
